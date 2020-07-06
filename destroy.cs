@@ -19,10 +19,13 @@ public class destroy : MonoBehaviour
     void OnCollisionEnter(Collision collison)
 
     {
-
+        //点数を加点する時に使える　UNITY講習会ではコメントアウト
         //Score.score++;
 
         Destroy(gameObject);
+        /* スクリプトリファレンス
+         * public static void Destroy (Object obj消すオブジェクトの指定,float t= 0.0F消えるまでの時間);
+         */
 
     }
 }

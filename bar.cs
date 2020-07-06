@@ -16,6 +16,11 @@ public class bar : MonoBehaviour
     void Update()
     {
         GetComponent<Rigidbody>().AddForce(transform.right *Input.GetAxisRaw("Horizontal") * accel,ForceMode.Acceleration);
+        /*　
+         *説明
+            Horizontal:水平方向の移動量  Vertical:垂直方向の移動量
+            AddForce (力を設定,ForceMode.Acceleration:その質量を無視して、リジッドボディへ継続的な加速を追加);  // 力を加える
+         */
 
     }
 }
